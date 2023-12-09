@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <BrowserRouter basename="/DontTouchMyState">
+          <BrowserRouter basename="/">
             <App />
             <ToastContainer autoClose={1000} theme="dark" />
           </BrowserRouter>
